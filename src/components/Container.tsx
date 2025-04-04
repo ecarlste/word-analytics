@@ -3,7 +3,7 @@ import Textarea from "./Textarea";
 
 function Container() {
   return (
-    <main>
+    <main className="container">
       <Textarea />
       <Stats />
     </main>

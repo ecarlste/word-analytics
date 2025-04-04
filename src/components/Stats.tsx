@@ -1,5 +1,5 @@
 function Stats() {
-  return <section>Stats Component</section>;
+  return <section className="stats">Stats Component</section>;
 }
 
 export default Stats;

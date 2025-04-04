@@ -1,5 +1,5 @@
 function BackgroundImage() {
-  return <>BackgroundImage Component</>;
+  return <div className="bg" />;
 }
 
 export default BackgroundImage;
