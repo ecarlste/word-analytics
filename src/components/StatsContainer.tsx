@@ -1,11 +1,12 @@
+import {
+  maxInstagramCharacterCount,
+  maxFacebookCharacterCount,
+} from "../lib/constants";
 import StatDisplay from "./StatDisplay";
 
 type StatsContainerProps = {
   text: string;
 };
-
-const maxInstagramCharacterCount = 280;
-const maxFacebookCharacterCount = 2200;
 
 function StatsContainer({ text }: StatsContainerProps) {
   const wordCount = text ? text.trim().split(/\s+/).length : 0;
