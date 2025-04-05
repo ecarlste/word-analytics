@@ -1,11 +1,14 @@
-import Stats from "./Stats";
+import { useState } from "react";
+import StatsContainer from "./StatsContainer";
 import Textarea from "./Textarea";
 
 function Container() {
+  const [text, setText] = useState("");
+
   return (
     <main className="container">
-      <Textarea />
-      <Stats />
+      <Textarea text={text} setText={setText} />
+      <StatsContainer text={text} />
     </main>
   );
 }
